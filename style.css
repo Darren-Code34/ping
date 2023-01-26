@@ -1,0 +1,156 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Mobil design*/
+
+body{
+    font-family: "Libre Franklin";
+    font-size: 20px;
+}
+
+.container{
+    margin: 70px auto;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    margin-bottom: 40px;
+}
+
+.title{
+    font-weight: 300;
+    font-size: 22px;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 20px;
+}
+
+.title span{
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+}
+
+.subtitle{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.form-container{
+    margin-bottom: 70px;
+}
+
+.email{
+    display: block;
+    margin: 0 auto 10px;
+    width: 260px;
+    border: solid 0.5px hsl(223, 100%, 88%);
+    border-radius: 20px;
+    padding: 10px 15px;
+    outline: none;
+    
+}
+
+.email::placeholder{
+    color: hsl(223, 100%, 88%);
+    font-weight: 300;
+}
+
+.submit{
+    width: 260px;
+    border: solid 0.5px transparent;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 0 auto 10px;
+    color: #fff;
+    background: hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+
+.dashboard{
+    width: 270px;
+    margin-bottom: 120px;
+}
+
+.social{
+    margin-bottom: 30px;
+}
+.social-icon{
+    margin-right: 15px;
+    border: solid 1px hsl(223, 100%, 88%);
+    border-radius: 50%;
+    padding: 4px 7px;
+    color: hsl(223, 87%, 63%);
+    outline: none;
+}
+
+.icon-facebook{
+    text-decoration: none;
+    width: 18px;
+
+}
+
+.copyright{
+    font-size: 11px;
+    color:  hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+footer{
+    margin-bottom: 30px;
+}
+
+/*tablet design*/
+
+@media screen and (min-width: 500px){
+    .email, .submit{
+        width: 300px;
+    }
+
+    .dashboard{
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 700px){
+
+    .dashboard{
+        width: 550px;
+    }
+}
+
+/* Desktop design*/
+
+@media screen and (min-width: 900px){
+    .email{
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .submit{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .email{
+        width: 350px;
+    }
+
+    .dashboard{
+        width: 600px;
+    }
+
+}
+
+
